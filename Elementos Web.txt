@@ -1,0 +1,9 @@
+
+Páginas:   Home --> Login --> Tienda --> Servicios --> Perfil usuario -->Carrito(OPT) -->Eventos
+
+Elementos DWEC: Geolocalización=Servicios | JQuery=TODO | Almacenamiento/Validación=Login |
+		API REST=Spotify/publicidad | web SPA
+
+Elementos DIW: Bootstrap | Font-icons | fuente personalizada | animaciones | embed-map |
+		responsive design|
+	
