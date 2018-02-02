@@ -1,0 +1,23 @@
+git checkout master
+
+git pull
+
+git checkout (Ruben/Juan)
+
+git pull
+
+git merge master
+
+------Realizar cambios----------
+
+git add .
+
+git commit -m " "
+
+git push
+
+git checkout master
+
+git merge (Ruben/Juan)
+
+git push
