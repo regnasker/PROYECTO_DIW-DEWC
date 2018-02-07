@@ -1,4 +1,6 @@
--- Hemos añadido las restricciones (foreign keys) y algunos datos más para pruebas
+
+
+
 
 CREATE TABLE users (
                     user_id bigint(20) unsigned NOT NULL auto_increment,
@@ -10,14 +12,15 @@ CREATE TABLE users (
                     PRIMARY KEY (user_id)
                   );
 
--- Categorías de productos
+
 CREATE TABLE categories (
                     category_id bigint(20) unsigned NOT NULL auto_increment,
                     name varchar(150) NOT NULL,
                     description text NOT NULL,
                     PRIMARY KEY (category_id)
                 );
--- Marcas de productos
+
+
 CREATE TABLE brands (
                     brand_id bigint(20) unsigned NOT NULL auto_increment,
                     name varchar(150) NOT NULL,
@@ -25,7 +28,8 @@ CREATE TABLE brands (
                     img varchar(256) NOT NULL,
                     PRIMARY KEY (brand_id)
                 );
--- Productos
+
+
 CREATE TABLE products (
                     product_id bigint(20) unsigned NOT NULL auto_increment,
                     category_id bigint(20) unsigned NOT NULL,
@@ -39,7 +43,7 @@ CREATE TABLE products (
                     FOREIGN KEY (category_id) REFERENCES categories (category_id),
                     FOREIGN KEY (brand_id) REFERENCES brands (brand_id)
                    );
--- Carrito
+
 CREATE TABLE shoppingcarts (
                     item_id bigint(20) unsigned NOT NULL auto_increment,
                     user_id bigint(20) unsigned NOT NULL,
@@ -51,7 +55,7 @@ CREATE TABLE shoppingcarts (
                     FOREIGN KEY (product_id) REFERENCES products (product_id)
                    );
 
--- Comentarios sobre los productos
+
 CREATE TABLE comments (
                        comment_id bigint(20) unsigned  NOT NULL auto_increment,
                        user_id bigint(20) unsigned  NOT NULL,
@@ -65,7 +69,7 @@ CREATE TABLE comments (
                        FOREIGN KEY (product_id) REFERENCES products (product_id)
                       );
 
--- Tiendas
+
 CREATE TABLE stores (
                         store_id bigint(20) unsigned NOT NULL auto_increment,
                         name varchar(150) NOT NULL,
@@ -75,32 +79,60 @@ CREATE TABLE stores (
                         PRIMARY KEY (store_id)
                       );
 
--- Inicializamos algunos valores de los registros.
+
+
 INSERT INTO users VALUES (1,'Juan','Sánchez',20,'jsanchez',md5('secret'));
 INSERT INTO users VALUES (2,'Antonia','González', 15,'agonzalez',md5('password'));
 INSERT INTO users VALUES (3,'Luisa','García', 18 ,'lgarcia',md5('topsecret'));
+INSERT INTO users VALUES (4,'Perfecto','Nazaruc', 27 ,'pnazaruc',md5('manzana'));
+INSERT INTO users VALUES (5,'Sebas','Moya', 31 ,'semoya',md5('platano'));
+INSERT INTO users VALUES (6,'Maria','Blas', 43 ,'mblas',md5('pasapalabra'));
+INSERT INTO users VALUES (7,'Lucia','Tomás', 20 ,'ltomas',md5('tango3'));
+INSERT INTO users VALUES (8,'Carlos','Fallos', 35 ,'cfallos',md5('4paredes'));
 
-INSERT INTO categories VALUES (1,'Textil','Ropa, Calzado, Hogar');
-INSERT INTO categories VALUES (2,'Electrónica', 'Informática, electrónica de consumo');
-INSERT INTO categories VALUES (3,'Congelados', 'Verdura, carne, pescado y preparados congelados');
-INSERT INTO categories VALUES (4,'Alimentación', 'Productos embasados');
 
-INSERT INTO brands VALUES (1,'Levis', 'Pantalones americanos', '/img/levis_logo.jpg');
-INSERT INTO brands VALUES (2,'Sony', 'Electrónica japonesa', '/img/sony_logo.jpg');
-INSERT INTO brands VALUES (3,'Findus', 'Verduras congeladas', '/img/findus_logo.jpg');
-INSERT INTO brands VALUES (4,'Nutella', 'Crema de cacao', '/img/nutella_logo.jpg');
 
-INSERT INTO `products`(`product_id`, `category_id`,`brand_id`, `name`, `description`, `img`,`price`, `posted`) VALUES
-  (1,1,1,'Pantalón','Pantalón vaquero', '/img/pvaquero.jpg', 49.99 ,NULL),
-  (2,2,2,'Radio','Aparato de radio', '/img/radio.jpg', 20, NULL),
-  (3,3,3,'Patata','Patata 50g', '/img/patata.jpg', 1.99 ,NULL),
-  (4,4,4,'Nutella','Crema de cacao 350 gr', '/img/botenutella.jpg', 2.99, NULL);
+INSERT INTO categories VALUES (1,'Amplificadores', '');
+INSERT INTO categories VALUES (2,'Guitarras', '');
+INSERT INTO categories VALUES (3,'Bajos', '');
+INSERT INTO categories VALUES (4,'Teclados', '');
+INSERT INTO categories VALUES (5,'Baterías', '');
+INSERT INTO categories VALUES (6,'Pedales', '');
+INSERT INTO categories VALUES (7,'Micrófonos', '');
+INSERT INTO categories VALUES (8,'Discos', '');
+
+
+
+INSERT INTO brands VALUES (1, 'Randall', 'Increible cabezal amplificador', '/img/RandallThrasher50W.jpg');
+INSERT INTO brands VALUES (2, 'Marshall', '', '/img/MarshallDSL40CST.jpg');
+INSERT INTO brands VALUES (3, 'Jackson', 'Preciosa guitarra blanca', '/img/JacksonRRXT.jpg');
+INSERT INTO brands VALUES (4, 'Ibanez', '', '/img/IbanezJEM77P.jpg');
+INSERT INTO brands VALUES (5, 'ESP', 'Bonito bajo rojo', '/img/ESPstreamBass.jpg');
+INSERT INTO brands VALUES (6, 'Fender', '', '/img/FenderPrecisionBass.jpg');
+INSERT INTO brands VALUES (7, 'Cassio', '', '/img/CassioKeyboard.jpg');
+INSERT INTO brands VALUES (8, 'Yamaha', '', '/img/yamahaPsr550.jpg');
+INSERT INTO brands VALUES (9, 'Pearl', '', '/img/KitMasterCustomPearl.jpg');
+INSERT INTO brands VALUES (10, 'Tama', '', '/img/KitStarDrumsTama.jpg');
+INSERT INTO brands VALUES (11, 'Boss', '', '/img/BossStompbox.jpg');
+INSERT INTO brands VALUES (12, 'Electro Harmonix', '', '/img/ElectroHarmonixMetalMuff.jpg');
+INSERT INTO brands VALUES (13, 'Sennheisser', '', '/img/sennheiserSKM-5200.jpg');
+INSERT INTO brands VALUES (14, 'Shure', '', '/img/ShureCD8Mic.jpg');
+INSERT INTO brands VALUES (15, 'Nuclear Blast', 'Ultimo disco de machine head', '/img/CatharsisNuclearBlast.jpg');
+INSERT INTO brands VALUES (16, 'Napalm Records', 'El mejor album de todos los tiempos', '/img/PowerWolfNapalmRecords.jpg');
+
+
+
+INSERT INTO 'products' (`product_id`, `category_id`,`brand_id`, `name`, `description`, `img`,`price`, `posted`) VALUES
+  ( , , ,'','', '',  ,),
+  ( , , ,'','', '',  ,),
+  ( , , ,'','', '',  ,),
+  ( , , ,'','', '',  ,);
 
 INSERT INTO `comments`(`user_id`, `product_id`,`rating`, `title`, `body`) VALUES
-  (1,1,5, 'Los mejores', 'Nunca defraudan, soy fiel a esta marca'),
-  (2,1,4, 'Esperaba más', 'No están mal, pero por el precio esperaba más calidad'),
-  (3,2,3, 'Volumen escaso', 'La marca se supone que es de confianza, pero el sonido de esta radio es demasiado bajo'),
-  (3,4,5 , 'Excelente', 'Mataría por mi Nutella');
+  ( , , , '', ''),
+  ( , , , '', ''),
+  ( , , , '', ''),
+  ( , , , '', '');
 
 INSERT INTO `shoppingcarts`(`user_id`, `product_id`,`item_number`) VALUES
   (1,1,1),
@@ -108,6 +140,8 @@ INSERT INTO `shoppingcarts`(`user_id`, `product_id`,`item_number`) VALUES
   (2,3,10),
   (3,2,1),
   (3,2,1);
+
+
 
 INSERT INTO `stores`(`store_id`,`name`,`address`,`lat`,`lng`) VALUES
   (1,'Juan de Garay','c/Juan de Garay, 25, 46017 Valencia', 39.4548243, -0.3957476),
