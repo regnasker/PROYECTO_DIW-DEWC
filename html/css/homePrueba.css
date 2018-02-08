@@ -7,6 +7,10 @@
 
 }
 
+body{
+  background-color: #343434;
+}
+
 .container{
   margin-top: 0px;
 }
@@ -47,7 +51,7 @@ margin-right: 15%;
   border: 1px solid black;
   margin-top: 10px;
   margin-bottom: 10px;
-  
+
   height:100%;
   text-align: center;
 }
