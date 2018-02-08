@@ -20,14 +20,14 @@
 
    <div class="row cabecera align-items-center">
 
-     
+
 
         <!--CABECERA BUENA -->
-       <div class="col-xl-2 col-lg-3 order-lg-1 col-md-1 order-md-1 logo">
-        <a href="#"><img id="logo" src="logo.svg" alt="logo">
+       <div class="col-xl-2 col-lg-3 order-lg-1 col-md-1 order-md-1  logo d-sm-none d-none d-md-block">
+        <a href="homePrueba2.html"><img id="logo" src="logo.svg" alt="logo">
          <h1>B&B</h1></a>
        </div>
-       <div class="navegacion col-xl-7 order-xl-2 col-lg-12 order-lg-3 col-md-12 order-md-3">
+       <div class="navegacion col-xl-7 order-xl-2 col-lg-12 order-lg-3 col-md-12 order-md-3  d-sm-none d-none d-md-block ">
          <ul>
           <li><button type="button" name="home" id="home"><a href="#">Home</a></button></li>
           <li><button type="button" name="tienda" id="tienda"><a href="#">Tienda</a></button></li>
@@ -35,10 +35,36 @@
           <li><button type="button" name="conocenos" id="conocenos"><a href="#">Conócenos</a></button></li>
          </ul>
        </div>
-       <div class="buscador justify-content-end col-xl-3 order-xl-3 col-lg-8 order-lg-2 col-md-9 order-md-2 row">
-           <input type="text" name="buscador" value="" placeholder="Buscar">
+       <div class="buscador justify-content-end col-xl-3 order-xl-3 col-lg-8 order-lg-2 col-md-9 order-md-2 d-sm-none d-none d-md-block row">
+         <form class="" action="" method="get">
            <button type="button" name="search"><i class="fas fa-search"></i></button>
+           <input type="text" name="buscador" value="" placeholder="Buscar">
+         </form>
        </div>
+
+
+       <!--CEBECERA MOVIL-->
+       <div class=" cabeceraMovil pos-f-t d-md-none d-sm-block col-sm-12 col-12">
+         <div class="collapse" id="navbarToggleExternalContent">
+           <div class="navegacionMovil">
+             <ul>
+              <li><button type="button" name="home" id="home"><a href="#">Home</a></button></li>
+              <li><button type="button" name="tienda" id="tienda"><a href="#">Tienda</a></button></li>
+              <li><button type="button" name="servicios" id="servicios"><a href="#">Servicios</a></button></li>
+              <li><button type="button" name="conocenos" id="conocenos"><a href="#">Conócenos</a></button></li>
+             </ul>
+           </div>
+         </div>
+       <nav class="navbar navbar-light ">
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="justify-content-center">
+           <a href="homePrueba2.html "><img id="logo" src="logo.svg" alt="logo">
+         </div>
+
+       </nav>
+        </div>
    </div>
 
 

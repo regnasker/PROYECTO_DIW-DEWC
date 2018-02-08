@@ -1,21 +1,17 @@
 *{
-<<<<<<< HEAD
-  background: #343434;
-}
-#logo{
-
-}
-=======
   font-family: 'Work Sans', sans-serif;
 }
 body{
   background-color: #343434;
 }
 .cabecera{
-  margin-top: 50px;
+  margin-top: 10px;
 }
 .logo{
   padding-left: 100px;
+}
+.logo a{
+  text-decoration: none;
 }
 .logo h1{
   color: black;
@@ -25,9 +21,21 @@ img#logo{
 }
 .navegacion{
   text-align: center;
+  padding:0px;
+  margin: 0px;
 }
 .navegacion div{
   padding: 0px;
+}
+.navegacion ul{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.navegacion li{
+  list-style: none;
+  display: inline-block;
+  width: 20%;
 }
 .navegacion button{
   width: 100%;
@@ -53,6 +61,8 @@ img#logo{
 }
 .buscador{
   margin-left: 20px;
+  margin: 0px;
+  padding: 0px;
 }
 .buscador div{
   padding: 0px;
@@ -73,12 +83,14 @@ img#logo{
 }
 .buscador input:focus{
   background-color:#dfdfdf;
+
 }
 .buscador button{
   background-color: #45b5c6 ;
   border: 2px #45b5c6 solid;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  float:right;
   outline: none;
   -webkit-transition: 1s ;
   -moz-transition: 1s ;
@@ -88,6 +100,9 @@ img#logo{
 .buscador button:hover{
   background-color:#dfdfdf;
   border: 2px #dfdfdf solid;
+  cursor: pointer;
+}
+.buscador button{
   cursor: pointer;
 }
 i.fa-search{
@@ -101,4 +116,52 @@ i.fa-search{
 i.fa-search:hover{
   color:#343434;
 }
->>>>>>> Ruben
+
+/* NAV MOVIL */
+.cabeceraMovil{
+  margin: 0px;
+  padding: 0px;
+  font-size: 1.5rem;
+  border-bottom: 1px #dfdfdf solid;
+}
+.cabeceraMovil #logo{
+  width:70px;
+}
+.navegacionMovil ul{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.navegacionMovil li{
+  list-style: none;
+  width: 100%;
+}
+.navegacionMovil button{
+  width: 100%;
+  background-color: #343434;
+  border: none;
+  border-bottom: 1px #dfdfdf solid;
+}
+.navbar{
+  background-color: #dfdfdf;
+}
+.navegacionMovil a{
+  padding: 20px;
+  color: #dfdfdf;
+  text-decoration: none;
+}
+@media(min-width:1141px){
+  .buscador{
+    padding-right: 50px;
+  }
+}
+@media(min-width:960px) and (max-width: 1140px){
+  .logo{
+    padding-left: 100px;
+  }
+}
+@media(max-width:425px){
+  .cabecera{
+    margin-top: 0px;
+  }
+}
