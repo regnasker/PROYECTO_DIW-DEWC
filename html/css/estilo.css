@@ -1,6 +1,104 @@
 *{
+<<<<<<< HEAD
   background: #343434;
 }
 #logo{
 
 }
+=======
+  font-family: 'Work Sans', sans-serif;
+}
+body{
+  background-color: #343434;
+}
+.cabecera{
+  margin-top: 50px;
+}
+.logo{
+  padding-left: 100px;
+}
+.logo h1{
+  color: black;
+}
+img#logo{
+  width: 100px;
+}
+.navegacion{
+  text-align: center;
+}
+.navegacion div{
+  padding: 0px;
+}
+.navegacion button{
+  width: 100%;
+  border-style: none;
+  border-bottom-style: solid;
+  border-bottom-color: #343434;
+  background-color:#343434;
+  outline: none;
+  -webkit-transition: 1s ;
+  -moz-transition: 1s ;
+  -ms-transition: 1s ;
+  transition: 1s;
+}
+.navegacion button:hover{
+  border-color: #45b5c6;
+  border-bottom-style: solid;
+  cursor: pointer;
+}
+.navegacion a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #dfdfdf;
+}
+.buscador{
+  margin-left: 20px;
+}
+.buscador div{
+  padding: 0px;
+  padding-bottom: 2px;
+
+}
+.buscador input{
+  background-color: #343434;
+  border-style: none;
+  outline: none;
+  padding-top: 4px;
+  border-bottom: 3px #dfdfdf solid;
+  float:right;
+  -webkit-transition: 1s ;
+  -moz-transition: 1s ;
+  -ms-transition: 1s ;
+  transition: 1s;
+}
+.buscador input:focus{
+  background-color:#dfdfdf;
+}
+.buscador button{
+  background-color: #45b5c6 ;
+  border: 2px #45b5c6 solid;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  outline: none;
+  -webkit-transition: 1s ;
+  -moz-transition: 1s ;
+  -ms-transition: 1s ;
+  transition: 1s;
+}
+.buscador button:hover{
+  background-color:#dfdfdf;
+  border: 2px #dfdfdf solid;
+  cursor: pointer;
+}
+i.fa-search{
+  color: #dfdfdf;
+  padding: 5px;
+  -webkit-transition: 1s ;
+  -moz-transition: 1s ;
+  -ms-transition: 1s ;
+  transition: 1s;
+}
+i.fa-search:hover{
+  color:#343434;
+}
+>>>>>>> Ruben
