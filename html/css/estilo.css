@@ -160,7 +160,7 @@ i.fa-search:hover{
     padding-left: 100px;
   }
 }
-@media(max-width:425px){
+@media(max-width:770px){
   .cabecera{
     margin-top: 0px;
   }
