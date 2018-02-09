@@ -7,64 +7,63 @@
 
 }
 
-body{
-  background-color: #343434;
-}
+
 
 .container{
   margin-top: 0px;
 }
 
-.cabecera{
+/* .cabecera{
   margin-top: 0px;
   border: 1px solid black;
   height:50px;
-}
+} */
 
 .slider{
-  margin-top: 10px;
+
   text-align: center;
   height:400px;
 }
 
 .productos{
-  margin-top: 10px;
+
   height: 300px;
 }
 
 .productos .novedadesTienda{
-border: 1px solid black;
+border: 1px solid #dfdfdf;
 height: 100%;
-/* margin: 0px; */
-margin-left: 15%;
+margin-right: 0px;
+padding: 0px;
+
 }
 
 .productos .novedadesServicio{
-border: 1px solid black;
+border: 1px solid #dfdfdf;
 height: 100%;
-/* margin: 0px; */
+margin-left: 0px;
+padding: 0px;
 
-margin-right: 15%;
+
 }
 
-.nosotros{
-  border: 1px solid black;
-  margin-top: 10px;
-  margin-bottom: 10px;
-
-  height:100%;
+.nosotros .contenido{
+  border: 1px solid #dfdfdf;
+  padding: 0px;
+  height:350px;
   text-align: center;
+
 }
 
 
 
 .pie{
-  border: 1px solid black;
+  border: 1px solid #dfdfdf;
   /* height: 10%; */
 }
 
-img{
-  border: 1px solid black;
+.slider img{
+  border: 1px solid transparent;
   background-color: gray;
   height: 400px;
 
@@ -75,7 +74,8 @@ img{
   height: 50px;
 }
 
-#carouselExampleIndicators{
-width: 70%;
-height: 100%;
+#carousel{
+border: 1px solid #dfdfdf;
+padding: 0;
+
 }
