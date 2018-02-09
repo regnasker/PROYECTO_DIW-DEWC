@@ -1,0 +1,81 @@
+/* reseteo de cajas */
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  margin: auto;
+
+}
+
+
+
+.container{
+  margin-top: 0px;
+}
+
+/* .cabecera{
+  margin-top: 0px;
+  border: 1px solid black;
+  height:50px;
+} */
+
+.slider{
+
+  /* text-align: center; */
+  height:400px;
+}
+
+.productos{
+
+  height: 300px;
+}
+
+.productos .novedadesTienda{
+border: 1px solid #dfdfdf;
+height: 100%;
+margin-right: 0px;
+padding: 0px;
+
+}
+
+.productos .novedadesServicio{
+border: 1px solid #dfdfdf;
+height: 100%;
+margin-left: 0px;
+padding: 0px;
+
+
+}
+
+.nosotros .contenido{
+  border: 1px solid #dfdfdf;
+  padding: 0px;
+  height:350px;
+  text-align: center;
+
+}
+
+
+
+.pie{
+  border: 1px solid #dfdfdf;
+  /* height: 10%; */
+}
+
+.slider img{
+  border: 1px solid transparent;
+  background-color: gray;
+  height: 400px;
+
+}
+
+.login{
+  margin: 0px;
+  height: 50px;
+}
+
+#carousel{
+border: 1px solid #dfdfdf;
+padding: 0;
+
+}
