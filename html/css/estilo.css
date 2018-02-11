@@ -152,7 +152,6 @@ i.fa-search:hover{
   color: #dfdfdf;
   text-decoration: none;
 }
-
 @media(min-width: 1140px){
   .logo{
     padding-left: 50px;
@@ -161,5 +160,11 @@ i.fa-search:hover{
 @media(max-width:770px){
   .cabecera{
     margin-top: 0px;
+  }
+  #logo{
+    position: absolute;
+    right: -1px;
+    top: 0.5px;
+    bottom: -1px;
   }
 }

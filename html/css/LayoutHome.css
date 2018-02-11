@@ -120,5 +120,16 @@ padding: 0px;
 #carousel{
 border: 1px solid #dfdfdf;
 padding: 0;
-
+}
+@media(max-width:770px)  {
+  .login{
+    margin: 0px;
+    padding: 0px;
+  }
+  .botonLogin{
+    padding: 10px;
+  }
+  .botonLogin a{
+      font-size: 1.5rem;
+  }
 }
