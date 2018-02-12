@@ -1,0 +1,26 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  margin: auto;
+
+}
+
+body{
+  color: #dfdfdf;
+}
+
+.servicio{
+  height: 400px;
+  border: 1px solid #dfdfdf;
+}
+
+.verMas{
+  margin-top: 50px;
+  text-decoration: underline;
+}
+
+.pie{
+  border: 1px solid #dfdfdf;
+
+}
