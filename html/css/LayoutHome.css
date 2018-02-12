@@ -4,25 +4,16 @@
   margin: 0px;
   box-sizing: border-box;
   margin: auto;
-
 }
-
-
-
 .container{
   margin-top: 0px;
 }
 
-
-
 .slider{
-
-  /* text-align: center; */
   height:400px;
 }
 
 .productos{
-
   height: 300px;
 }
 
@@ -31,7 +22,6 @@ border: 1px solid #dfdfdf;
 height: 100%;
 margin-right: 0px;
 padding: 0px;
-
 }
 
 .productos .novedadesServicio{
@@ -42,22 +32,16 @@ padding: 0px;
 
 
 }
-
 .nosotros .contenido{
   border: 1px solid #dfdfdf;
   padding: 0px;
   height:350px;
-  /* text-align: center; */
+  text-align: center;
 
 }
-
-
-
 .pie{
   border: 1px solid #dfdfdf;
-
 }
-
 .slider img{
   border: 1px solid transparent;
   background-color: gray;
@@ -67,35 +51,85 @@ padding: 0px;
 
 .login{
   margin: 0px;
-  height: 50px;
+  position: absolute;
+  z-index: 1;
+  right: -1px;
+/*CAMBIAR EL Z-INDEX Y POSICION ABSOULTA  */
 }
-
+.botonLogin{
+  width: 100%;
+  background-color: #62D850;
+  border: 2px #62D850 solid;
+  outline: none !important;
+  cursor: pointer;
+}
+.inputLogin{
+  width: 100%;
+}
+.letraLogin{
+  color: #343434;
+}
+.letraLogin:hover{
+  text-decoration: none;
+  color: #343434;
+}
+.contenidoLogin{
+  background-color: #dfdfdf;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 10;
+}
+.contenidoLogin label{
+  color: #343434;
+}
+.contenidoLogin input{
+  background-color: #dfdfdf;
+  border-style: none;
+  outline: none;
+  padding-top: 4px;
+  border-bottom: 1px white solid;
+  float:right;
+  -webkit-transition: 1s ;
+  -moz-transition: 1s ;
+  -ms-transition: 1s ;
+  transition: 1s;
+}
+.contenidoLogin input:focus{
+  background-color:white;
+}
+.contenidoLogin button{
+  margin-top: 10px;
+  padding: 10px;
+  background-color: white;
+  color: #343434;
+  border:1px white solid;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+.contenidoLogin button:nth-child(2){
+  width: 100%;
+  margin-top: 0px;
+  background-color: #45b5c6;
+  border:1px #45b5c6 solid;
+  color: white;
+}
+.contenidoLogin p{
+  font-size: 12px;
+}
 #carousel{
 border: 1px solid #dfdfdf;
 padding: 0;
-
 }
-
-.productos .novedadesTienda .cubo{
-  padding: 0px;
-  height: 300px;
-  /* background-color: green; */
-}
-
-.productos .novedadesServicio .cubo{
-  padding: 0px;
-  height: 300px;
-  /* background-color: yellow; */
-}
-
-.nosotros .contenido{
-  padding: 0px;
-  height: 300px;
-  /* background-color: red; */
-
-}
-
-.relleno .prueba{
-  padding: 0px;
-  height:300px;
+@media(max-width:770px)  {
+  .login{
+    margin: 0px;
+    padding: 0px;
+  }
+  .botonLogin{
+    padding: 10px;
+  }
+  .botonLogin a{
+      font-size: 1.5rem;
+  }
 }

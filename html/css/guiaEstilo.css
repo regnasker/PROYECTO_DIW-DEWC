@@ -46,9 +46,9 @@ a.migas:hover{
 }
 #registro{
   border-radius: 10px;
-  border-color:#45B5C6;
+  border-color:#62D850;
   border-style: solid;
-  background-color: #45B5C6;
+  background-color: #62D850;
   padding: 10px;
   color: #343434;
   -webkit-transition: 1s ease;
@@ -67,9 +67,9 @@ a.migas:hover{
 }
 #compra{
   width: 100%;
-  border-color:#9B92D1;
+  border-color:#62D850;
   border-style: solid;
-  background-color: #9B92D1;
+  background-color: #62D850;
   color:#343434;
   padding: 10px;
   margin-top: 111px;
@@ -101,7 +101,7 @@ a.migas:hover{
   background: #45b5c6;
 }
 #c9b92d1{
-  background: #9b92d1;
+  background: #62D850;
 }
 #cdfdfdf{
   background: #dfdfdf;

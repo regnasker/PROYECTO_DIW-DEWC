@@ -15,6 +15,11 @@ body{
   border: 1px solid #dfdfdf;
 }
 
+.verMas{
+  margin-top: 50px;
+  text-decoration: underline;
+}
+
 .pie{
   border: 1px solid #dfdfdf;
 
