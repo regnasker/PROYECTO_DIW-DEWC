@@ -1,0 +1,21 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  margin: auto;
+
+}
+
+body{
+  color: #dfdfdf;
+}
+
+.usuario, .grupo{
+  height: 800px;
+  border: 1px solid #dfdfdf;
+}
+
+.pie{
+  border: 1px solid #dfdfdf;
+
+}

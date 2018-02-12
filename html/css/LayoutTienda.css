@@ -1,0 +1,64 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  margin: auto;
+
+}
+
+body{
+  color: #dfdfdf;
+}
+
+.container{
+  margin-top: 0px;
+}
+
+.productos{
+  margin-top: 100px;
+}
+
+.product{
+  height: 200px;
+  border: 1px solid #dfdfdf;
+
+}
+
+.product2{
+  height: 200px;
+  border: 1px solid #dfdfdf;
+  margin-top: 60px;
+}
+
+hr{
+  margin-top: 150px;
+  border-color: #dfdfdf;
+
+}
+
+.verMas{
+  margin-top: 50px;
+  text-decoration: underline;
+}
+
+.pie{
+  border: 1px solid #dfdfdf;
+
+}
+
+@media(max-width:770px){
+  .productos{
+    margin-top: 0px;
+  }
+
+  .product{
+    margin-top: 20px;
+
+  }
+
+  .product2{
+    margin-top: 20px;
+
+  }
+
+}

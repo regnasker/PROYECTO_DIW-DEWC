@@ -92,31 +92,31 @@ INSERT INTO users VALUES (8,'Carlos','Fallos', 35 ,'cfallos',md5('4paredes'));
 
 
 
-INSERT INTO categories VALUES (1,'Amplificadores', '');
-INSERT INTO categories VALUES (2,'Guitarras', '');
-INSERT INTO categories VALUES (3,'Bajos', '');
-INSERT INTO categories VALUES (4,'Teclados', '');
-INSERT INTO categories VALUES (5,'Baterías', '');
-INSERT INTO categories VALUES (6,'Pedales', '');
-INSERT INTO categories VALUES (7,'Micrófonos', '');
-INSERT INTO categories VALUES (8,'Discos', '');
+INSERT INTO categories VALUES (1,'Amplificadores', 'amplificadores');
+INSERT INTO categories VALUES (2,'Guitarras', 'guitarras');
+INSERT INTO categories VALUES (3,'Bajos', 'bajos');
+INSERT INTO categories VALUES (4,'Teclados', 'teclados');
+INSERT INTO categories VALUES (5,'Baterías', 'baterías');
+INSERT INTO categories VALUES (6,'Pedales', 'pedales');
+INSERT INTO categories VALUES (7,'Micrófonos', 'microfonos');
+INSERT INTO categories VALUES (8,'Discos', 'discos');
 
 
 
 INSERT INTO brands VALUES (1, 'Randall', 'Increible cabezal amplificador', '/img/RandallThrasher50W.jpg');
-INSERT INTO brands VALUES (2, 'Marshall', '', '/img/MarshallDSL40CST.jpg');
+INSERT INTO brands VALUES (2, 'Marshall', 'Cajas negras', '/img/MarshallDSL40CST.jpg');
 INSERT INTO brands VALUES (3, 'Jackson', 'Preciosa guitarra blanca', '/img/JacksonRRXT.jpg');
-INSERT INTO brands VALUES (4, 'Ibanez', '', '/img/IbanezJEM77P.jpg');
+INSERT INTO brands VALUES (4, 'Ibanez', 'Guitarra azul', '/img/IbanezJEM77P.jpg');
 INSERT INTO brands VALUES (5, 'ESP', 'Bonito bajo rojo', '/img/ESPstreamBass.jpg');
-INSERT INTO brands VALUES (6, 'Fender', '', '/img/FenderPrecisionBass.jpg');
-INSERT INTO brands VALUES (7, 'Cassio', '', '/img/CassioKeyboard.jpg');
-INSERT INTO brands VALUES (8, 'Yamaha', '', '/img/yamahaPsr550.jpg');
-INSERT INTO brands VALUES (9, 'Pearl', '', '/img/KitMasterCustomPearl.jpg');
-INSERT INTO brands VALUES (10, 'Tama', '', '/img/KitStarDrumsTama.jpg');
-INSERT INTO brands VALUES (11, 'Boss', '', '/img/BossStompbox.jpg');
-INSERT INTO brands VALUES (12, 'Electro Harmonix', '', '/img/ElectroHarmonixMetalMuff.jpg');
-INSERT INTO brands VALUES (13, 'Sennheisser', '', '/img/sennheiserSKM-5200.jpg');
-INSERT INTO brands VALUES (14, 'Shure', '', '/img/ShureCD8Mic.jpg');
+INSERT INTO brands VALUES (6, 'Fender', 'Color verde menta', '/img/FenderPrecisionBass.jpg');
+INSERT INTO brands VALUES (7, 'Cassio', 'teclado platead', '/img/CassioKeyboard.jpg');
+INSERT INTO brands VALUES (8, 'Yamaha', 'teclado multifunción', '/img/yamahaPsr550.jpg');
+INSERT INTO brands VALUES (9, 'Pearl', 'kit de batería Pearl', '/img/KitMasterCustomPearl.jpg');
+INSERT INTO brands VALUES (10, 'Tama', 'kit completo de bateria Tama', '/img/KitStarDrumsTama.jpg');
+INSERT INTO brands VALUES (11, 'Boss', 'Stomp box de pedales', '/img/BossStompbox.jpg');
+INSERT INTO brands VALUES (12, 'Electro Harmonix', 'Muff metal', '/img/ElectroHarmonixMetalMuff.jpg');
+INSERT INTO brands VALUES (13, 'Sennheisser', 'Micro plata', '/img/sennheiserSKM-5200.jpg');
+INSERT INTO brands VALUES (14, 'Shure', 'Micro compacto color plateado', '/img/ShureCD8Mic.jpg');
 INSERT INTO brands VALUES (15, 'Nuclear Blast', 'Ultimo disco de machine head', '/img/CatharsisNuclearBlast.jpg');
 INSERT INTO brands VALUES (16, 'Napalm Records', 'El mejor album de todos los tiempos', '/img/PowerWolfNapalmRecords.jpg');
 
