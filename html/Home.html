@@ -32,7 +32,6 @@
           <li><button type="button" name="home" id="home"><a href="home.html">Home</a></button></li>
           <li><button type="button" name="tienda" id="tienda"><a href="tienda.html">Tienda</a></button></li>
           <li><button type="button" name="servicios" id="servicios"><a href="servicios.html">Servicios</a></button></li>
-          <li><button type="button" name="conocenos"><a href="#conocenos">Conócenos</a></button></li>
          </ul>
        </div>
        <div class="buscador justify-content-end col-xl-3 order-xl-3 col-lg-8 order-lg-2 col-md-9 order-md-2 d-sm-none d-none d-md-block row">
@@ -49,7 +48,6 @@
               <li><button type="button" name="home" id="home"><a href="#">Home</a></button></li>
               <li><button type="button" name="tienda" id="tienda"><a href="#">Tienda</a></button></li>
               <li><button type="button" name="servicios" id="servicios"><a href="#">Servicios</a></button></li>
-              <li><button type="button" name="conocenos" ><a href="#">Conócenos</a></button></li>
              </ul>
            </div>
          </div>
@@ -63,7 +61,7 @@
    </div>
 
    <div class="row slider ">
-        <div id="carousel" class="align-items-center carousel slide col-xl-8 offset-xl-2 order-xl-1 order-lg-2 " data-ride="carousel">
+        <div id="carousel" class="align-items-center carousel slide col-xl-8 offset-xl-2 order-xl-1 order-lg-2 d-none d-sm-block " data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carousel" data-slide-to="0" class="active"></li>
             <li data-target="#carousel" data-slide-to="1"></li>
@@ -89,7 +87,7 @@
             <span class="sr-only">Next</span>
           </a>
       </div>
-      <div class="login col-xl-2 col-lg-2 col-md-4 order-xl-2 order-lg-1">
+      <div class="login col-xl-2 col-lg-2 col-md-4 order-xl-2 order-lg-1 col-12">
           <button class="botonLogin" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
             <a href="#" class="letraLogin">Login</a>
           </button>
@@ -115,17 +113,19 @@
         </div>
       </div>
    </div>
-
    <div class="row productos">
 
-       <div class="novedadesTienda col-md-4 offset-md-2 col-sm-12 col-12">
-         <a href="#" class="textoProductos">
-           <h2>El más vendido!</h2>
-           <p>Gibson Firebird 1999</p>
+       <div class="novedadesTienda col-md-6 col-sm-12 col-12">
+         <a href="tienda.html" class="textoProductos">
+           <h2>¡Novedades!</h2>
+           <p>Aquí podrás encontrar nuestras últimas promociones</p>
          </a>
        </div>
-       <div class="novedadesServicio col-md-4 col-sm-12 col-12">
-
+       <div class=" novedadesServicio col-md-6 col-sm-12 col-12">
+         <a href="servicios.html" class="text-md-right text-lg-right text-sm-left text-sm-left textoProductos">
+            <h2>¡Te montamos el concierto!</h2>
+            <p>Los locales más cercanos para montar tu concierto</p>
+         </a>
        </div>
 
 
@@ -136,16 +136,10 @@
      </div>
    </div>
    <div class="row eventos ">
-     <div class=" prueba col-12">
-
-     </div>
      <div class="contenido col-12 offset-12 clearfix">
-        <img class="aboutUs" id="conocenos"src="" alt="">
-       <p>kjasdas</p>
+       <h2></h2>
      </div>
    </div>
-
-   <hr id="hrpie">
 
    <div class="row pie ">
      <div class="rrss col-4" >

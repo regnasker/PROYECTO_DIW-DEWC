@@ -155,9 +155,6 @@ i.fa-search:hover{
   color: #dfdfdf;
   text-decoration: none;
 }
-#hrpie{
-  border:1px #dfdfdf solid;
-}
 .pie{
   padding-top: 30px;
   padding-bottom: 30px;
@@ -197,7 +194,7 @@ i.fa-search:hover{
 }
 .pie a{
   text-decoration: none;
-  color:  #F27E2B;
+  color: #45b5c6;
 }
 .ley{
   text-align: left;
@@ -207,13 +204,13 @@ i.fa-search:hover{
     padding-left: 50px;
   }
 }
-@media(max-width:764px){
+@media(max-width:767px){
   .cabecera{
     margin-top:0px;
   }
   #logo{
     position: absolute;
-    right: -1px;
+    /* right: -1px; */
     top: 0.5px;
     bottom: -1px;
   }

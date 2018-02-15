@@ -2,7 +2,6 @@
 *{
   padding: 0px;
   margin: 0px;
-  box-sizing: border-box;
   margin: auto;
 }
 .container{
@@ -12,18 +11,35 @@
 .slider{
   height:400px;
 }
-
+.slider img{
+  height: 400px;
+}
+#carousel{
+padding: 0;
+}
 .productos{
-  height: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
 }
-
-.productos .novedadesTienda{
-/* border: 1px solid #dfdfdf; */
-height: 100%;
-margin-right: 0px;
-padding: 0px;
-/* background-color: black; */
+.novedadesTienda p , .novedadesServicio p{
+  z-index: 1;
+  position: absolute;
+  bottom:10px;
+  margin-left: 15px;
+  width: 100%;
+}
+.novedadesTienda h2 , .novedadesServicio h2{
+  width:100%;
+  z-index: 1;
+  position: absolute;
+  bottom:50px;
+  margin-left: 15px;
+  color:#f27e2b;
+}
+.novedadesServicio p, .novedadesServicio h2{
+  margin-left: 0px;
+  padding-right: 50px;
 }
 .novedadesTienda a{
   display: block;
@@ -40,51 +56,41 @@ padding: 0px;
   -ms-transition: 1s ;
   transition: 1s;
 }
-@keyframes escalar {
-  from {background-size: 100%;}
-  to {}
+.novedadesServicio a{
+  display: block;
+  width: 100%;
+  min-height: 300px;
+  background-image: url("../img/rockcity1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  text-decoration: none;
+  color: #dfdfdf;
+  -webkit-transition: 1s ;
+  -moz-transition: 1s ;
+  -ms-transition: 1s ;
+  transition: 1s;
 }
+
 .novedadesTienda a:hover{
-  background-size: 115%;
-  /* animation-name: escalar; */
-  /* animation-duration: 2s; */
-  /* animation-iteration-count: infinite; */
+  background-size: 105%;
 }
-.textoProductos h2{
-
-}
-.textoProductos p{
-  font-size: 34px;
-
-}
-.productos .novedadesServicio{
-border: 1px solid #dfdfdf;
-height: 100%;
-margin-left: 0px;
-padding: 0px;
-background-color: black
-
+.novedadesServicio a:hover{
+  background-size: 105%;
 }
 .eventos .contenido{
   border: 1px solid #dfdfdf;
   padding: 0px;
   height:350px;
   text-align: center;
+  background-color: #dfdfdf;
 
 }
-.slider img{
-  border: 1px solid transparent;
-  background-color: gray;
-  height: 400px;
-
-}
-
 .login{
   margin: 0px;
   position: absolute;
-  z-index: 1;
-  right: -1px;
-/*CAMBIAR EL Z-INDEX Y POSICION ABSOULTA  */
+  z-index: 2;
+  right: 0px;
 }
 .botonLogin{
   width: 100%;
@@ -147,19 +153,75 @@ background-color: black
 .contenidoLogin p{
   font-size: 12px;
 }
-#carousel{
-border: 1px solid #dfdfdf;
-padding: 0;
+@media(max-width:768px)  {
+  .novedadesTienda p, .novedadesServicio p{
+    bottom: 50px;
+  }
+  .novedadesTienda h2, .novedadesServicio h2{
+    bottom: 100px;
+    font-size: 30px;
+  }
 }
-@media(max-width:770px)  {
+@media(max-width:767px)  {
+  .container-fluid{
+    padding: 0px;
+  }
+  .novedadesTienda p, .novedadesServicio p{
+    bottom: 40px;
+    margin-left: 15px;
+  }
+  .novedadesTienda h2, .novedadesServicio h2{
+    bottom: 70px;
+    font-size: 30px;
+    margin-left: 15px;
+  }
+  .novedadesTienda , .novedadesServicio {
+    padding: 0px;
+  }
+  .productos{
+    margin: 0px;
+    padding: 0px;
+  }
   .login{
     margin: 0px;
     padding: 0px;
+  }
+  .slider{
+    height: 60px;s
   }
   .botonLogin{
     padding: 10px;
   }
   .botonLogin a{
       font-size: 1.5rem;
+  }
+}
+@media(max-width:425px)  {
+.productos a{
+  text-align: left;
+}
+.novedadesTienda h2{
+    font-size: 2rem;
+  }
+.novedadesServicio h2{
+    bottom: 75px;
+    font-size: 1.5rem;
+  }
+  .novedadesTienda p, .novedadesServicio p{
+    bottom: 20px;
+  }
+  .novedadesTienda p{
+    width: 80%;
+  }
+
+}
+@media(max-width:375px)  {
+  .novedadesTienda h2, .novedadesServicio h2{
+    bottom: 100px;
+  }
+}
+@media(max-width:320px)  {
+  .novedadesTienda p, .novedadesServicio p{
+    bottom: 50px;
   }
 }
