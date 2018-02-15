@@ -14,6 +14,49 @@ body{
   margin-top: 0px;
 }
 
+.filtro{
+  margin: 0px;
+  padding: 0px;
+  margin-top: 10px;
+}
+#botonFiltro{
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #45b5c6;
+  color:#343434;
+  border:1px #45b5c6 solid;
+  outline: none;
+  cursor: pointer;
+}
+.contenidoFiltro{
+  background-color: #dfdfdf;
+  color:#343434;
+}
+.radioButtons{
+  padding: 0px;
+}
+.radioButtons label{
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.radioButtons input{
+  cursor: pointer;
+  width: 22px;
+}
+.contenidoFiltro button{
+  background-color: #45b5c6;
+  border: none;
+  outline: none;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+.contenidoFiltro button:hover{
+  opacity:0.5;
+}
 .productos{
   margin-top: 100px;
 }
@@ -41,16 +84,13 @@ hr{
   text-decoration: underline;
 }
 
-.pie{
-  border: 1px solid #dfdfdf;
-
-}
-
-@media(max-width:770px){
+@media(max-width:764px){
   .productos{
     margin-top: 0px;
   }
-
+  .filtro{
+    margin-top: 0px;
+  }
   .product{
     margin-top: 20px;
 
