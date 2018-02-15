@@ -38,7 +38,6 @@ CREATE TABLE products (
                     description text NOT NULL,
                     img varchar(256) NOT NULL,
                     price float NOT NULL,
-                    posted timestamp,
                     PRIMARY KEY (product_id),
                     FOREIGN KEY (category_id) REFERENCES categories (category_id),
                     FOREIGN KEY (brand_id) REFERENCES brands (brand_id)
@@ -122,17 +121,12 @@ INSERT INTO brands VALUES (16, 'Napalm Records', 'El mejor album de todos los ti
 
 
 
-INSERT INTO 'products' (`product_id`, `category_id`,`brand_id`, `name`, `description`, `img`,`price`, `posted`) VALUES
-  ( , , ,'','', '',  ,),
-  ( , , ,'','', '',  ,),
-  ( , , ,'','', '',  ,),
-  ( , , ,'','', '',  ,);
+INSERT INTO 'products' (`product_id`, `category_id`,`brand_id`, `name`, `description`, `img`,`price`) VALUES
+  ( , , ,'','', '',),
+  ( , , ,'','', '',),
+  ( , , ,'','', '',),
+  ( , , ,'','', '',);
 
-INSERT INTO `comments`(`user_id`, `product_id`,`rating`, `title`, `body`) VALUES
-  ( , , , '', ''),
-  ( , , , '', ''),
-  ( , , , '', ''),
-  ( , , , '', '');
 
 INSERT INTO `shoppingcarts`(`user_id`, `product_id`,`item_number`) VALUES
   (1,1,1),

@@ -22,6 +22,7 @@ border: 1px solid #dfdfdf;
 height: 100%;
 margin-right: 0px;
 padding: 0px;
+
 }
 
 .productos .novedadesServicio{
@@ -29,9 +30,9 @@ border: 1px solid #dfdfdf;
 height: 100%;
 margin-left: 0px;
 padding: 0px;
-
-
 }
+
+
 .nosotros .contenido{
   border: 1px solid #dfdfdf;
   padding: 0px;
@@ -39,12 +40,17 @@ padding: 0px;
   text-align: center;
 
 }
+.relleno{
+  margin: 0px;
+  padding:0px;
+}
 .pie{
   border: 1px solid #dfdfdf;
 }
 .slider img{
   border: 1px solid transparent;
   background-color: gray;
+  /* margin: 0px; */
   height: 400px;
 
 }
@@ -53,7 +59,8 @@ padding: 0px;
   margin: 0px;
   position: absolute;
   z-index: 1;
-  right: -1px;
+  right: 0px;
+
 /*CAMBIAR EL Z-INDEX Y POSICION ABSOULTA  */
 }
 .botonLogin{
@@ -131,5 +138,25 @@ padding: 0;
   }
   .botonLogin a{
       font-size: 1.5rem;
+  }
+
+  .relleno{
+    height: 300px;
+  }
+}
+
+@media(max-width:576px){
+  .slider{
+    height: auto;
+  }
+
+  .productos{
+    margin-top: 60px;
+  }
+
+  .relleno{
+    margin: 0px;
+    padding:0px;
+    height: 300px;
   }
 }
