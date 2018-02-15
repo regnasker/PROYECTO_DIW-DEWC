@@ -15,32 +15,62 @@
 
 .productos{
   height: 300px;
+
 }
 
 .productos .novedadesTienda{
-border: 1px solid #dfdfdf;
+/* border: 1px solid #dfdfdf; */
 height: 100%;
 margin-right: 0px;
 padding: 0px;
+/* background-color: black; */
 }
+.novedadesTienda a{
+  display: block;
+  width: 100%;
+  min-height: 300px;
+  background-image: url("../img/firebird.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  text-decoration: none;
+  color: #dfdfdf;
+  -webkit-transition: 1s ;
+  -moz-transition: 1s ;
+  -ms-transition: 1s ;
+  transition: 1s;
+}
+@keyframes escalar {
+  from {background-size: 100%;}
+  to {}
+}
+.novedadesTienda a:hover{
+  background-size: 115%;
+  /* animation-name: escalar; */
+  /* animation-duration: 2s; */
+  /* animation-iteration-count: infinite; */
+}
+.textoProductos h2{
 
+}
+.textoProductos p{
+  font-size: 34px;
+
+}
 .productos .novedadesServicio{
 border: 1px solid #dfdfdf;
 height: 100%;
 margin-left: 0px;
 padding: 0px;
-
+background-color: black
 
 }
-.nosotros .contenido{
+.eventos .contenido{
   border: 1px solid #dfdfdf;
   padding: 0px;
   height:350px;
   text-align: center;
 
-}
-.pie{
-  border: 1px solid #dfdfdf;
 }
 .slider img{
   border: 1px solid transparent;

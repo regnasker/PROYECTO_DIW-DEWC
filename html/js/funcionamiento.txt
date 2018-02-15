@@ -1,0 +1,8 @@
+HOME
+-------------------------
+  NAVBAR: Navegar correspondiente, conocenos es un ancla.
+  BUSCADOR: ¡¡¡¡¡¡¿¿¿¿¿COMO COÑO FUNCIONA????!!!!!!!
+  SLIDER: IMAGENES CLICKABLES QUE TE LLEVEN AL PROFUCTO O SERVICIO
+  TIENDA: Cada producto una ventana nueva preformateada
+  LOS VER MAS: AJAX
+  FILTROS: COGER LOGIN

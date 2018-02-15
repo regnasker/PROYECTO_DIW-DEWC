@@ -57,7 +57,10 @@ img#logo{
 .navegacion a {
   font-size: 16px;
   text-decoration: none;
+  display: block;
   color: #dfdfdf;
+  margin: 0px;
+  width: 100%;
 }
 .buscador{
   margin-left: 20px;
@@ -76,7 +79,7 @@ img#logo{
   border-style: none;
   outline: none;
   padding-top: 4px;
-  border-bottom: 3px #dfdfdf solid;
+  border-bottom: 2px #dfdfdf solid;
   float:right;
   -webkit-transition: 1s ;
   -moz-transition: 1s ;
@@ -152,14 +155,61 @@ i.fa-search:hover{
   color: #dfdfdf;
   text-decoration: none;
 }
+#hrpie{
+  border:1px #dfdfdf solid;
+}
+.pie{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.pie li{
+  list-style: none;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  transition: 1s;
+}
+.pie div.rrss li{
+  display: inline-block;
+}
+.pie i{
+  border-radius: 50%;
+  padding: 10px;
+  color: white;
+  margin: 5px;
+}
+.pie li:hover{
+  opacity: 0.5;
+}
+.fa-twitter{
+  background-color: #55acee;
+}
+.fa-facebook{
+  background-color: #3b5998;
+}
+.fa-instagram{
+  background-color: #125688;
+}
+.pie p{
+  margin: 0px;
+  color: black;
+}
+.pie a{
+  text-decoration: none;
+  color:  #F27E2B;
+}
+.ley{
+  text-align: left;
+}
 @media(min-width: 1140px){
   .logo{
     padding-left: 50px;
   }
 }
-@media(max-width:770px){
+@media(max-width:764px){
   .cabecera{
-    margin-top: 0px;
+    margin-top:0px;
   }
   #logo{
     position: absolute;
