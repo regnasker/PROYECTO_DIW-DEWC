@@ -13,6 +13,7 @@
    <link rel="stylesheet" href="css/LayoutHome.css">
    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
+   <script src="" charset="utf-8"></script>
    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
    <script src="js/jsheader.js" charset="utf-8"></script>
   </head>
@@ -28,10 +29,10 @@
        </div>
        <div class="navegacion col-xl-7 order-xl-2 col-lg-12 order-lg-3 col-md-12 order-md-3  d-sm-none d-none d-md-block ">
          <ul>
-          <li><button type="button" name="home" id="home"><a href="#">Home</a></button></li>
-          <li><button type="button" name="tienda" id="tienda"><a href="#">Tienda</a></button></li>
-          <li><button type="button" name="servicios" id="servicios"><a href="#">Servicios</a></button></li>
-          <li><button type="button" name="conocenos" id="conocenos"><a href="#">Conócenos</a></button></li>
+          <li><button type="button" name="home" id="home"><a href="home.html">Home</a></button></li>
+          <li><button type="button" name="tienda" id="tienda"><a href="tienda.html">Tienda</a></button></li>
+          <li><button type="button" name="servicios" id="servicios"><a href="servicios.html">Servicios</a></button></li>
+          <li><button type="button" name="conocenos"><a href="#conocenos">Conócenos</a></button></li>
          </ul>
        </div>
        <div class="buscador justify-content-end col-xl-3 order-xl-3 col-lg-8 order-lg-2 col-md-9 order-md-2 d-sm-none d-none d-md-block row">
@@ -48,7 +49,7 @@
               <li><button type="button" name="home" id="home"><a href="#">Home</a></button></li>
               <li><button type="button" name="tienda" id="tienda"><a href="#">Tienda</a></button></li>
               <li><button type="button" name="servicios" id="servicios"><a href="#">Servicios</a></button></li>
-              <li><button type="button" name="conocenos" id="conocenos"><a href="#">Conócenos</a></button></li>
+              <li><button type="button" name="conocenos" ><a href="#">Conócenos</a></button></li>
              </ul>
            </div>
          </div>
@@ -62,7 +63,7 @@
    </div>
 
    <div class="row slider ">
-        <div id="carousel" class="align-items-center carousel slide col-xl-8 offset-xl-2 d-none d-sm-block order-xl-1 order-lg-2 " data-ride="carousel">
+        <div id="carousel" class="align-items-center carousel slide col-xl-8 offset-xl-2 order-xl-1 order-lg-2 " data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carousel" data-slide-to="0" class="active"></li>
             <li data-target="#carousel" data-slide-to="1"></li>
@@ -73,10 +74,10 @@
               <img class="img-fluid w-100" src="../img/PromoGuitarra.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
-              <img class="img-fluid w-100 " src="../img/PromoGuitarra2.jpg" alt="Second slide">
+              <img class="img-fluid w-100" src="../img/PromoGuitarra2.jpg" alt="Second slide">
             </div>
             <div class="carousel-item">
-              <img class="  w-100 " src="../img/PromoMicroPrueba7.jpg" alt="Third slide">
+              <img class="img-fluid w-100" src="../img/PromoMicroPrueba7.jpg" alt="Third slide">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
@@ -118,8 +119,10 @@
    <div class="row productos">
 
        <div class="novedadesTienda col-md-4 offset-md-2 col-sm-12 col-12">
-
-
+         <a href="#" class="textoProductos">
+           <h2>El más vendido!</h2>
+           <p>Gibson Firebird 1999</p>
+         </a>
        </div>
        <div class="novedadesServicio col-md-4 col-sm-12 col-12">
 
@@ -127,39 +130,40 @@
 
 
    </div>
-   <div class="row relleno d-block d-sm-block d-md-none">
-     <div class="prueba w-100 ">
+   <div class="row relleno">
+     <div class=" prueba d-block d-sm-block d-md-none">
 
      </div>
    </div>
-
-
-   <div class="row nosotros ">
+   <div class="row eventos ">
      <div class=" prueba col-12">
 
      </div>
-     <div class="contenido col-12 offset-12">
-       <img class="aboutUs" src="" alt="">
-       <h1></h1> <!-- bajar la font size -->
+     <div class="contenido col-12 offset-12 clearfix">
+        <img class="aboutUs" id="conocenos"src="" alt="">
        <p>kjasdas</p>
      </div>
-
    </div>
 
+   <hr id="hrpie">
 
-
-   <div class="row pie">
-     <div class="col-12">
-       <li><a href="#"></a></li>
-       <li><a href="#"></a></li> <!-- Fonticons -->
-       <li><a href="#"></a></li>
-       <li><a href="#"></a></li>
-       <li><a href="#"></a></li> <!-- Creative Commons -->
-     </div>
-
+   <div class="row pie ">
+     <div class="rrss col-4" >
+       <li><a href="#"><i class="fab fa-twitter" ></i></a></li>
+       <li><a href="#"><i class="fab fa-facebook" ></i></a></li> <!-- Fonticons -->
+       <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+   </div>
+   <div class="col-4 ">
+     <p>© 2018 Black Bird Productions</p>
+   </div>
+   <div class="col-4 ley">
+     <ul>
+        <li><p><a href="#">Aviso legal</a></p></li>
+        <li><p><a href="#">Cookies</a></p></li>
+     </ul>
 
    </div>
-
+   </div>
 
  </div>
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
