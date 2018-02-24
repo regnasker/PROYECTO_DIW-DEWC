@@ -19,6 +19,9 @@ body{
   padding: 0px;
   margin-top: 10px;
 }
+#tienda{
+  border-color: #45b5c6;
+}
 #botonFiltro{
   padding-left: 30px;
   padding-right: 30px;
@@ -57,20 +60,28 @@ body{
 .contenidoFiltro button:hover{
   opacity:0.5;
 }
+#productosTienda{
+  color:#343434;
+}
 .productos{
   margin-top: 100px;
 }
-
-.product{
-  height: 200px;
-  border: 1px solid #dfdfdf;
+.product button{
+  padding: 10px;
+  float: right;
+  background-color: #62D850;
+  border: 1px solid #62D850;
+  border-radius: 5px;
+  cursor:pointer;
+}
+.product button:hover{
 
 }
-
-.product2{
-  height: 200px;
+.product{
   border: 1px solid #dfdfdf;
-  margin-top: 60px;
+}
+.product p{
+  font-size:
 }
 
 hr{

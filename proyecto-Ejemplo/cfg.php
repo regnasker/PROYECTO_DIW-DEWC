@@ -9,7 +9,7 @@ $cfg = Config::getInstance();
 //Database
 $cfg->set(ConfigKeys::DB_SERVER, 'localhost');
 $cfg->set(ConfigKeys::DB_DRIVER, 'mysql');
-$cfg->set(ConfigKeys::DB_NAME, 'proyecto');
+$cfg->set(ConfigKeys::DB_NAME, 'byb');
 $cfg->set(ConfigKeys::DB_USER, 'root');
 $cfg->set(ConfigKeys::DB_PASS, '');
 

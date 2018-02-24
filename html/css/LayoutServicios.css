@@ -14,6 +14,9 @@ body{
   padding: 0px;
   margin-top: 10px;
 }
+#servicios{
+  border-color: #45b5c6;
+}
 #botonFiltro{
   padding-left: 30px;
   padding-right: 30px;

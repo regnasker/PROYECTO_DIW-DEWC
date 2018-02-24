@@ -12,9 +12,9 @@
    <link rel="stylesheet" href="css/estilo.css">
    <link rel="stylesheet" href="css/LayoutTienda.css">
    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-
+   <script src="./js/js/jquery-3.2.1.min.js"></script>
    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
-   <script src="js/jsheader.js" charset="utf-8"></script>
+   <script src="js\tienda.js" charset="utf-8"></script>
   </head>
  <body>
 
@@ -31,7 +31,6 @@
           <li><button type="button" name="home" id="home"><a href="home.html">Home</a></button></li>
           <li><button type="button" name="tienda" id="tienda"><a href="tienda.html">Tienda</a></button></li>
           <li><button type="button" name="servicios" id="servicios"><a href="servicios.html">Servicios</a></button></li>
-          <li><button type="button" name="conocenos" id="conocenos"><a href="#">Conócenos</a></button></li>
          </ul>
        </div>
        <div class="buscador justify-content-end col-xl-3 order-xl-3 col-lg-8 order-lg-2 col-md-9 order-md-2 d-sm-none d-none d-md-block row">
@@ -74,7 +73,7 @@
 
      <div class="collapse w-100" id="collapseExample">
        <div class="contenidoFiltro card-body">
-         <form class="" action="" method="get">
+
            <div class=" col-8 radioButtons">
              <label for="asc">
                <input type="radio" name="radio" value="asc" id="asc">Precio ascendente
@@ -89,40 +88,15 @@
                <input type="radio" name="radio" value="za" id="za">Z-A
              </label>
            </div>
-           <button type="submit" class="col-md-2 offset-md-2 col-12 " name="filtroSubmit">Aplicar</button>
-         </form>
+           <button type="button" class="col-md-2 offset-md-2 col-12 " name="filtroSubmit" id="filtro">Aplicar</button>
+
        </div>
      </div>
    </div>
  </div>
-   <div class="row productos">
+ <div id="productosTienda">
 
-       <div class="product prod1 col-md-2 col-5 "><hr> Descripcion </div>
-
-       <div class="product prod2 col-md-2 col-5 "><hr> Descripcion </div>
-
-       <div class="product prod3 col-md-2 col-5 "><hr> Descripcion </div>
-
-       <div class="product prod4 col-md-2 col-5 "><hr> Descripcion </div>
-
-   </div>
-
-   <div class="row productos">
-     <div class="product2 prod5 col-md-2  col-5 "><hr> Descripcion </div>
-
-     <div class="product2 prod6 col-md-2  col-5 "><hr> Descripcion </div>
-
-     <div class="product2 prod7 col-md-2  col-5 "><hr> Descripcion </div>
-
-     <div class="product2 prod8 col-md-2  col-5 "><hr> Descripcion </div>
-
-   </div>
-
-   <div class="row verMas">
-     <a  class="verMas" href="#"> Ver más </a>
-
-   </div>
-
+ </div>
 
    <hr id="hrpie">
 
@@ -144,7 +118,6 @@
    </div>
 
  </div>
- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
  </body>

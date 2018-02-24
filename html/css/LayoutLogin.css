@@ -3,7 +3,6 @@
   margin: 0px;
   box-sizing: border-box;
   margin: auto;
-
 }
 
 body{
@@ -13,14 +12,34 @@ body{
 .usuario, .grupo{
   height: 600px;
   padding: 0px;
-
+  margin: 0px;
 }
 .usuario{
-  padding-right: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 .grupo{
-  padding-left: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
+.login h2{
+  color: #f27e2b;
+  margin-top: 140px;
+  margin-left: 30px;
+}
+.login p{
+  margin-left: 30px;
+}
+.login button{
+  padding: 0px;
+  background-color: #62D850;
+  border: 1px #62D850 solid;
+  position: absolute;
+  bottom: 200px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 .usuario a{
   display: block;
   width: 100%;
@@ -28,16 +47,10 @@ body{
   background-image: url("../img/hooman.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-attachment: fixed;
   background-position: center;
   text-decoration: none;
   background-size: cover;
   color: #dfdfdf;
-  -webkit-transition: 1s ;
-  -moz-transition: 1s ;
-  -ms-transition: 1s ;
-  transition: 1s;
-
 }
 .grupo a{
   padding: 0px;
@@ -47,19 +60,23 @@ body{
   background-image: url("../img/rockcity2.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-attachment:fixed;
-  background-position:right;
+  background-position:left;
   background-size: cover;
   text-decoration: none;
   color: #dfdfdf;
-  -webkit-transition: 1s ;
-  -moz-transition: 1s ;
-  -ms-transition: 1s ;
-  transition: 1s;
 }
 @media(max-width:767px){
   .usuario, .grupo{
     height: 300px;
     padding: 0px;
+  }
+  .grupo a{
+    margin-top: 20px;
+  }
+  .login button{
+    bottom: 70px;
+  }
+  .login h2{
+    margin-top: 30px;
   }
 }
