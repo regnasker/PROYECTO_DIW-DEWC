@@ -151,15 +151,22 @@ background-color: black
 border: 1px solid #dfdfdf;
 padding: 0;
 }
-@media(max-width:770px)  {
+@media(max-width:764px)  {
   .login{
     margin: 0px;
     padding: 0px;
   }
+  .slider{
+
+    height: 60px;
+  }
+
   .botonLogin{
     padding: 10px;
   }
   .botonLogin a{
       font-size: 1.5rem;
   }
+
+
 }

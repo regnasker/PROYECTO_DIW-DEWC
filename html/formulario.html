@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head >
+  <meta charset="utf-8">
+  <title>b&b</title>
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400" rel="stylesheet">
+
+  <script src="" charset="utf-8"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/layoutform.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+  <script src="" charset="utf-8"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+  <script src="js/jsheader.js" charset="utf-8"></script>
+  <script src="js/jsform.js" charset="utf-8"></script>
+ </head>
+  <body>
+
+    <form id="formularioUsuario" action="#" method="post" enctype="application/x-www-urlencoded">
+      <!-- Informacion personal -->
+      <h1>Formulario alta</h1>
+      <fieldset>
+        <legend>Información Personal</legend>
+
+        <div>
+          <label for="nombre">Nombre*:</label>
+          <input type="text" name="nombre" autofocus="autofocus" placeholder="Introduce el nombre..">
+        </div>
+
+        <div>
+          <label for="apellidos">Apellidos*:</label>
+          <input id="apellidos" type="text" name="apellidos" placeholder="Introduce los apellidos">
+        </div>
+
+        <div>
+          <label for="email">Email*:</label>
+          <input id="email" type="email" name="email" placeholder="Introduce tu email">
+        </div>
+
+        <div>
+          <label for="email">Repetir email*:</label>
+          <input id="repetirEmail" type="email" name="email" placeholder="Repita el email">
+        </div>
+
+        <div id="inputFecha">
+          <label for="fecha">Fecha nacimiento*:</label>
+          <input id="fecha" type="date" name="fecha" ></input>
+        </div>
+
+
+        <div>
+          <label for="selector">Provincia:</label>
+          <select name="provincia" id="selector">
+            <option value="0">Escoge provincia </option>
+            <option value="C">Castellón</option>
+            <option value="V">Valencia</option>
+            <option value="A">Alicante</option>
+          </select>
+        </div>
+        <div>
+          <p >¿Tocas un instrumento?</p>
+        </div>
+        <div >
+          <label for="S">Sí
+            <input type="radio" name="nick" id="S" value="S"></input>
+            <!-- Aparecerá solo si se clica en sí -->
+            <input id="instrumento" type="text" name="instrumento" placeholder="Díganos cual...">
+          </label>
+          <label for="N">No
+            <input type="radio" name="nick" id="N" value="N"></input>
+          </label>
+        </div>
+        <br>
+        <br>
+        <input type="submit" value="Enviar" id="enviar"></input>
+
+      </fieldset>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="row pie ">
+      <div class="rrss col-4" >
+        <li><a href="#"><i class="fab fa-twitter" ></i></a></li>
+        <li><a href="#"><i class="fab fa-facebook" ></i></a></li> <!-- Fonticons -->
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+    </div>
+    <div class="col-4 ">
+      <p>© 2018 Black Bird Productions</p>
+    </div>
+    <div class="col-4 ley">
+      <ul>
+         <li><p><a href="#">Aviso legal</a></p></li>
+         <li><p><a href="#">Cookies</a></p></li>
+      </ul>
+
+    </div>
+    </div>
+  </body>
+</html>
