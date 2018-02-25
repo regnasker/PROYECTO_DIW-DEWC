@@ -13,7 +13,6 @@
    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
    <script src="js/tienda.js" charset="utf-8"></script>
-   <script src="js/cart.js" charset="utf-8"></script>
    <script src="js/jquery-3.2.1.min.js"></script>
   </head>
  <body>
@@ -32,13 +31,14 @@
           <li><button type="button" name="tienda" id="tienda"><a href="tienda.html">Tienda</a></button></li>
           <li><button type="button" name="servicios" id="servicios"><a href="servicios.html">Servicios</a></button></li>
          </ul>
+
        </div>
+       <i class="fas fa-shopping-cart d-sm-none d-none d-md-block"></i><div class="d-sm-none d-none d-md-block minicart">  </div>
        <div class="buscador justify-content-end col-xl-3 order-xl-3 col-lg-8 order-lg-2 col-md-9 order-md-2 d-sm-none d-none d-md-block row">
-         <form class="" action="" method="get">
+         <form class="col-" action="" method="get">
            <button type="button" name="search"><i class="fas fa-search"></i></button>
            <input type="text" name="buscador" value="" placeholder="Buscar">
          </form>
-         <div id="minicart"></div>
        </div>
 
 
@@ -47,10 +47,9 @@
          <div class="collapse" id="navbarToggleExternalContent">
            <div class="navegacionMovil">
              <ul>
-              <li><button type="button" name="home" id="home"><a href="#">Home</a></button></li>
-              <li><button type="button" name="tienda" id="tienda"><a href="#">Tienda</a></button></li>
-              <li><button type="button" name="servicios" id="servicios"><a href="#">Servicios</a></button></li>
-              <li><button type="button" name="conocenos" id="conocenos"><a href="#">Conócenos</a></button></li>
+              <li><button type="button" name="home" id="home"><a href="home.html">Home</a></button></li>
+              <li><button type="button" name="tienda" id="tienda"><a href="tienda.html">Tienda</a></button></li>
+              <li><button type="button" name="servicios" id="servicios"><a href="servicios.html">Servicios</a></button></li>
              </ul>
            </div>
          </div>
@@ -58,6 +57,7 @@
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon"></span>
          </button>
+         <i class="fas fa-shopping-cart"></i><div class="minicart">  </div>
          <div class="justify-content-center">
            <a href=" "><img id="logo" src="../img/logo.svg" alt="logo"> </a>
          </div>

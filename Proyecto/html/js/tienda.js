@@ -21,7 +21,7 @@ $(document).ready(function () {
             .attr({"id":"comp"+campo.product_id})
             .attr("class", "addToCart")
             .click(addToCart)
-            .appendTo("#capt"+campo.product_id)
+            .appendTo("#proID"+campo.product_id)
             .append("Comprar");
     });
     //EVENTOS DE FILTRO
@@ -47,7 +47,12 @@ $(document).ready(function () {
           $("<div></div>").attr({"class":"col-12","id":"capt"+campo.product_id}).appendTo("#proID"+campo.product_id);
           $("<p><strong>"+campo.name+"</strong></p>").appendTo("#capt"+campo.product_id);
           $("<p><strong>"+campo.price+" €</strong></p>").css("font-size","20px").appendTo("#capt"+campo.product_id);
-          $("<button></button>").attr({"id":"comp"+campo.product_id}).appendTo("#capt"+campo.product_id).append("Comprar");
+          $("<button></button>")
+            .attr({"id":"comp"+campo.product_id})
+            .attr("class", "addToCart")
+            .click(addToCart)
+            .appendTo("#proID"+campo.product_id)
+            .append("Comprar");
     });
     });
     }else{
@@ -105,7 +110,7 @@ $(document).ready(function () {
     if(!items) {
       items = 0
     }
-    $("#minicart").text(items)
+    $(".minicart").text(items)
   }
 
   renderMiniCart();

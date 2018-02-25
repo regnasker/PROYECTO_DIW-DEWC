@@ -8,6 +8,9 @@ body{
   background-color: #343434;
   color: #dfdfdf;
 }
+h1, h2{
+  color: #f27e2b;
+}
 div.cabecera{
   text-align: center;
   border: 1px #dfdfdf solid;
@@ -18,15 +21,15 @@ div.cabecera{
   margin-right: 20px;
 }
 a{
-  color: #F27E2B;
+  color: #45b5c6;
   text-decoration: none;
 }
 a:nth-child(2){
-  color: #af5b1f;
+  color: #2E7984;
   text-decoration: none;
 }
 a:hover{
-  color: #F2BB93;
+  color: #dfdfdf;
 }
 .migas{
   color:#9B92D1;
@@ -35,17 +38,13 @@ a:hover{
 #visitada{
   color:#C4BEE8;
 }
-a.migas:hover{
-  color:#C4BEE8;
-}
-
 #font{
   margin-bottom: 15px;
   margin-top: 15px;
   border-bottom: 1px #dfdfdf solid;
 }
 #registro{
-  border-radius: 10px;
+  border-radius: 5px;
   border-color:#62D850;
   border-style: solid;
   background-color: #62D850;
@@ -69,6 +68,7 @@ a.migas:hover{
   width: 100%;
   border-color:#62D850;
   border-style: solid;
+  border-radius: 5px;
   background-color: #62D850;
   color:#343434;
   padding: 10px;
@@ -77,10 +77,6 @@ a.migas:hover{
   -moz-transition: 1s ease;
   -ms-transition: 1s ease;
   transition: 1s ease;
-}
-#compra:hover{
-  background-color:#dfdfdf;
-  border-color:#dfdfdf;
 }
 .color{
   display: inline-block;

@@ -196,6 +196,9 @@ i.fa-search:hover{
   text-decoration: none;
   color: #45b5c6;
 }
+.pie a:visited{
+  color: #2E7984;
+}
 .ley{
   text-align: left;
 }
