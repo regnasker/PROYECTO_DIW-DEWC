@@ -215,3 +215,12 @@ i.fa-search:hover{
     bottom: -1px;
   }
 }
+
+#minicart {
+  width: 30px;
+  display: inline-block;
+  background: #dfdfdf;
+  color: #343434;
+  float: right;
+  text-align: center;
+}

@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $.getJSON("../proyecto-ejemplo/products.php", function (data, st, xhr) {
+  $.getJSON("../php/products.php", function (data, st, xhr) {
     if (st == "success") {
         var array = new Array();
         $.each(data.products, function (i, campo){
@@ -17,7 +17,12 @@ $(document).ready(function () {
           $("<div></div>").attr({"class":"col-12","id":"capt"+campo.product_id}).appendTo("#proID"+campo.product_id);
           $("<p><strong>"+campo.name+"</strong></p>").appendTo("#capt"+campo.product_id);
           $("<p><strong>"+campo.price+" €</strong></p>").css("font-size","20px").appendTo("#capt"+campo.product_id);
-          $("<button></button>").attr({"id":"comp"+campo.product_id}).appendTo("#capt"+campo.product_id).append("Comprar");
+          $("<button></button>")
+            .attr({"id":"comp"+campo.product_id})
+            .attr("class", "addToCart")
+            .click(addToCart)
+            .appendTo("#capt"+campo.product_id)
+            .append("Comprar");
     });
     //EVENTOS DE FILTRO
     $("#filtro").click(function () {
@@ -85,4 +90,23 @@ $(document).ready(function () {
       return 0;
     });
   }
+
+  function addToCart(item) {
+    if (localStorage.itemsCart) {
+      localStorage.itemsCart = Number(localStorage.itemsCart) + 1;
+    } else {
+      localStorage.itemsCart = 1;
+    }
+    renderMiniCart();
+  }
+
+  function renderMiniCart() {
+    var items = localStorage.itemsCart;
+    if(!items) {
+      items = 0
+    }
+    $("#minicart").text(items)
+  }
+
+  renderMiniCart();
 });

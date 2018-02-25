@@ -9,12 +9,17 @@
 body{
   color: #dfdfdf;
 }
+
+.container{
+  margin-top: 0px;
+}
+
 .filtro{
   margin: 0px;
   padding: 0px;
   margin-top: 10px;
 }
-#servicios{
+#tienda{
   border-color: #45b5c6;
 }
 #botonFiltro{
@@ -55,12 +60,51 @@ body{
 .contenidoFiltro button:hover{
   opacity:0.5;
 }
-.servicio{
-  height: 400px;
+#productosTienda{
+  color:#343434;
+}
+.productos{
+  margin-top: 100px;
+}
+.product button{
+  padding: 10px;
+  float: right;
+  background-color: #62D850;
+  border: 1px solid #62D850;
+  border-radius: 5px;
+  cursor:pointer;
+}
+/* .product button:hover{
+
+} */
+.product{
   border: 1px solid #dfdfdf;
 }
+.product p{
+  font-size:
+}
 
-.verMas{
-  margin-top: 50px;
-  text-decoration: underline;
+hr{
+  margin-top: 150px;
+  border-color: #dfdfdf;
+
+}
+
+@media(max-width:764px){
+  .productos{
+    margin-top: 0px;
+  }
+  .filtro{
+    margin-top: 0px;
+  }
+  .product{
+    margin-top: 20px;
+
+  }
+
+  .product2{
+    margin-top: 20px;
+
+  }
+
 }
