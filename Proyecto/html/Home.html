@@ -29,7 +29,7 @@
           <li><button type="button" name="home" id="home"><a href="home.html">Home</a></button></li>
           <li><button type="button" name="tienda" id="tienda"><a href="tienda.html">Tienda</a></button></li>
           <li><button type="button" name="servicios" id="servicios"><a href="servicios.html">Servicios</a></button></li>
-         </ul>
+        </ul>
        </div>
        <div class="buscador justify-content-end col-xl-3 order-xl-3 col-lg-8 order-lg-2 col-md-9 order-md-2 d-sm-none d-none d-md-block row">
          <form class="" action="" method="get">
@@ -90,22 +90,24 @@
             <span class="sr-only">Next</span>
           </a>
       </div>
+      <div id="log" class="col-xl-2 col-lg-2 col-md-4 order-xl-2 order-lg-1 col-12">
+      </div>
       <div class="login col-xl-2 col-lg-2 col-md-4 order-xl-2 order-lg-1 col-12">
           <button class="botonLogin" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
             <a href="#" class="letraLogin">Login</a>
           </button>
         <div class="collapse" id="collapseExample">
           <div class="contenidoLogin card-body">
-            <form class="" action="" method="post">
+            <form  class="" method="post">
               <div class="">
                 <label for="">Usuario:</label>
-                <input type="text" name="" value="" class="inputLogin">
+                <input type="text" name="" value="" id="usr" class="inputLogin">
               </div>
               <div class="">
                 <label for="">Contraseña:</label>
-                <input type="password" name="" value="" class="inputLogin">
+                <input type="password" name="" value="" id="pass"class="inputLogin">
               </div>
-              <button type="submit" name="button">Sign in</button>
+              <button id="login"type="submit" name="button">Sign in</button>
             </form>
             <hr>
             <div class="">
