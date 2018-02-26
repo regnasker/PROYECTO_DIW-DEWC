@@ -129,9 +129,9 @@ INSERT INTO 'products' ('product_id', 'category_id','brand_id', 'name', 'descrip
   ( 14 , 7 , 14 ,'Micrófono shure CD8', '/img/ShureCD8Mic.jpg', 204),
   ( 15 , 8 , 15 ,'Album Catharsis (Machine head)', '/img/CatharsisNuclearBlast.jpg', 15),
   ( 16 , 8 , 16 ,'Album Powerwolf', '/img/PowerWolfNapalmRecords.jpg', 15),
-  ( 17 , 9 , 18 ,'Sala Rockcity Valencia', '/img/RockcityValencia.jpg', 368),
-  ( 18 , 9 , 18 ,'Sala Paberse Matao Valencia', '/img/PaberValencia.jpg', 115),
-  ( 19 , 9 , 18 ,'Sala 16 Toneladas Valencia', '/img/16ToneladasValencia.jpg', 249),
+  ( 17 , 9 , 18 ,'Rockcity', '/img/RockcityValencia.jpg', 368),
+  ( 18 , 9 , 18 ,'PaberseMatao', '/img/PaberValencia.jpg', 115),
+  ( 19 , 9 , 18 ,'16Toneladas', '/img/16ToneladasValencia.jpg', 249),
   ( 20 , 10 , 17 ,'Promo Ampli', '/img/PromoAmpli.jpg', 20),
   ( 21 , 10 , 17 ,'Promo Micro', '/img/PromoMicro.jpg', 20),
   ( 22 , 10 , 17 ,'Promo guitarra', '/img/PromoGuitarra.jpg', 20);
@@ -147,6 +147,6 @@ INSERT INTO 'shoppingcarts'('user_id', 'product_id','item_number') VALUES
 
 
 INSERT INTO 'stores'('store_id','name','address','lat','lng','mapa') VALUES
-  (1,'Sala Rockcity Valencia',' C/ Els Coheters, 6, 46132 Almàssera, Valencia, València',39.5117123,-0.3607491,'<iframe class"embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3078.122872485385!2d-0.36293778438591623!3d39.511716418103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60466c002fa9fb%3A0x405243f394cb2727!2sRock+City!5e0!3m2!1ses!2ses!4v1519319519435" style="border:0" allowfullscreen></iframe>'),
-  (2,'Sala Paberse Matao Valencia','Carrer de Castelló, 7, 46910 Sedaví, València',39.426437,-0.3918197,'<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3081.8975577000174!2d-0.3918196843877759!3d39.426440923190185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604ec1264990f1%3A0x11ff508fb0ece632!2sCarrer+de+Castell%C3%B3%2C+7%2C+46910+Sedav%C3%AD%2C+Valencia!5e0!3m2!1ses!2ses!4v1519319553664" style="border:0" allowfullscreen></iframe>'),
-  (3,'Sala 16 Toneladas Valencia','Carrer de Ricardo Micó, 3, 46009 València',39.4812533,-0.3898079,'<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.442905480527!2d-0.39016918438658477!3d39.48191251988194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f596910d6fb%3A0x25ecd942c9585c9b!2sCarrer+de+Ricardo+Mic%C3%B3%2C+3%2C+46009+Val%C3%A8ncia%2C+Valencia!5e0!3m2!1ses!2ses!4v1519319584583" style="border:0" allowfullscreen></iframe>');
+  (1,'Rockcity',' C/ Els Coheters, 6, 46132 Almàssera, Valencia, València',39.5117123,-0.3607491,'<iframe class"embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3078.122872485385!2d-0.36293778438591623!3d39.511716418103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60466c002fa9fb%3A0x405243f394cb2727!2sRock+City!5e0!3m2!1ses!2ses!4v1519319519435" style="border:0" allowfullscreen></iframe>'),
+  (2,'PaberseMatao','Carrer de Castelló, 7, 46910 Sedaví, València',39.426437,-0.3918197,'<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3081.8975577000174!2d-0.3918196843877759!3d39.426440923190185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604ec1264990f1%3A0x11ff508fb0ece632!2sCarrer+de+Castell%C3%B3%2C+7%2C+46910+Sedav%C3%AD%2C+Valencia!5e0!3m2!1ses!2ses!4v1519319553664" style="border:0" allowfullscreen></iframe>'),
+  (3,'16Toneladas','Carrer de Ricardo Micó, 3, 46009 València',39.4812533,-0.3898079,'<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.442905480527!2d-0.39016918438658477!3d39.48191251988194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f596910d6fb%3A0x25ecd942c9585c9b!2sCarrer+de+Ricardo+Mic%C3%B3%2C+3%2C+46009+Val%C3%A8ncia%2C+Valencia!5e0!3m2!1ses!2ses!4v1519319584583" style="border:0" allowfullscreen></iframe>');
