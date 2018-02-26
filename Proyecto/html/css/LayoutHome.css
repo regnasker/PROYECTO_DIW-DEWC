@@ -15,9 +15,21 @@
 }
 #carousel{
 padding: 0;
+margin: 0px;
+margin-left: 45px;
+padding-right: 45px;
 }
 #home{
   border-color: #45b5c6;
+}
+.banner{
+  margin: 0px;
+  /* background-image: url("../../img/guitarPromon.jpg");
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: center; */
+  height: 400px;
+  /* margin-left: 15px; */
 }
 .productos{
   margin-top: 10px;
@@ -185,6 +197,12 @@ padding: 0;
 }
 .contenidoLogin p{
   font-size: 12px;
+}
+@media(max-width: 1200px){
+  #carousel{
+    padding: 0px;
+    margin: 0px;
+  }
 }
 @media(max-width:768px)  {
   .novedadesTienda p, .novedadesServicio p{
